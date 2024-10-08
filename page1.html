@@ -1,0 +1,68 @@
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <style>
+        table {
+            width: 95%; /* Set table width to 100% of the container */
+            margin: 0 auto; /* Center the table */
+            border: "2"; 
+            
+        
+        }
+        th, td {
+            border: 3px solid #ccc; /* Add border to cells */
+            padding: 30px; /* Add padding */
+            text-align: left; /* Align text to the left */
+            font-size: 20px; /* Increase the font size */
+        }
+        th {
+            background-color: #f2f2f2; /* Background color for header */
+        }
+        img {
+            width: 200px; /* Set image width */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <h1 style="background-color: darkgray; text-align: center; color: rgb(0, 0, 0); ">MY Online Store</h1>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Image</th>
+            <th>Price</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td>Iphone</td>
+            <td><img src="https://www.imagineonline.store/cdn/shop/files/iPhone_15_Pink_PDP_Image_Position-1__en-IN.jpg?v=1694605258&width=1100" alt="iPhone 15"></td>
+            <td>500$</td>
+            <td><a href="https://www.apple.com/shop/buy-iphone/iphone-15">Apple.com</a></td>
+        </tr>
+        <tr>
+            <td>Samsung</td>
+            <td><img src="https://image-us.samsung.com/SamsungUS/home/shop/all-deals/09052024/SDSAC-7948-S24U-DSE-Fall-Weeklong-ADP-Short_Card_260x260.png?$default-png$" alt="Galaxy S24 Ultra" ></td>
+            <td>300$</td>
+            <td><a href="https://www.samsung.com/levant/smartphones/all-smartphones/">Samsung.com</a></td>
+        </tr>
+        <tr>
+            <td>One Plus</td>
+            <td><img src="https://emergingsolutions.in/public/uploads/all/0c30040028caea6f4d57f79ce481a97b.jpg" alt="OnePlus Nord"></td>
+            <td>350$</td>
+            <td><a href="https://www.oneplus.com/ie/store/phone">OnePlus.com</a></td>
+        </tr>
+    </table>
+    <form action="/submit_registration" method="POST" style="background-color: rgb(161, 158, 158); padding: 10px; margin-top: 40px;">
+        <h2>Request Your Device Now!</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="birthday">Date of Birth</label>
+        <input type="date" id="birthday" name="birthday" required>
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
